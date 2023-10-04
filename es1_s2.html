@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        /*body{
+            background-color: blueviolet;
+        }*/
+
+         .card {
+            width: 25%;
+            aspect-ratio: 1/1.5;
+            overflow: hidden;
+            position: relative;
+            border-radius: 20px;
+
+        }
+    
+        .gradiente{
+            position:absolute;
+            background: rgb(0,0,0);
+            background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(59,59,59,0) 32%);
+            
+            border: 2px black;
+            width: 100%;
+            height: 100%;
+           display: none;
+
+        }
+        
+       
+        .card img{
+            width: 100%;
+            height: 100%;
+            
+            
+        }
+        .card:hover .gradiente{
+
+            display: block;
+        }
+        .puntini{
+            position: absolute;
+            width: 15%;
+            display: none;
+            top: 85%;
+            left: 80%;
+            border-radius: 20px;
+            
+
+
+        }
+        .card:hover .puntini{
+            display: block;
+        }
+
+
+
+        .upload{
+            position: absolute;
+            width: 15%;
+            display: none;
+            top: 85%;
+            left: 60%;
+            border-radius: 20px;
+            
+
+
+        }
+        .card:hover .upload{
+            display: block;
+        }
+
+        
+        .arrow{
+            position: absolute;
+            width: 15%;
+            display: none;
+            top: 85%;
+            left: 10%;
+            border-radius: 20px;
+            
+
+
+        }
+        .card:hover .arrow{
+            display: block;
+        }
+
+        span{
+
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+            text-align: center;
+        }
+        .save{
+            position: absolute;
+            width: 30%;
+            display: none;
+            top: 5%;
+            left: 60%;
+            border-radius: 20px;
+            background-color: rgb(194, 12, 12);
+
+        }
+        .card:hover .save{
+            display: block;
+        }
+
+        h1{
+            color: white;
+        }
+        button:hover{
+            background-color: grey;
+        }
+
+
+    </style>
+</head>
+<body>
+     
+    
+
+    <div class="card">
+
+        
+
+        <div class="gradiente" > </div>
+        
+    
+
+        
+        <img  src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSboipZnXF1kwthOE_XXm47YrYbGIG_SBGPmwX8SI8Iehhsc3O5" >
+         
+        <div>
+            <button class="save">
+                <h1>SAVE</h1>
+            </button>
+            
+            <button class="arrow">
+                <img  src="./arrow.png" > 
+                
+            </button>
+            
+            
+            <button class="upload">
+                <img  src="./upload.png" > 
+            </button>
+            
+            <button class="puntini">
+                <img  src="./puntini.png" > 
+            </button>
+        </div>
+
+    </div>
+
+
+
+
+
+
+
+</body>
+</html>
